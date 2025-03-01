@@ -2,73 +2,65 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Import Google Icon Font-->
+<!-- Import Google Icon Font -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <style>
-.tabs .tab a:focus,.tabs .tab a:focus.active{background:none}
-.col img{aspect-ratio: 2 / 3;width:100%;border-radius:5px;margin-bottom:5px}
-.padDrew{padding:10px 0;margin:50px 0}
-.sidenav li{transition:background ease .2s}
-.row .col{padding:0 5px}
-.sidenav li>a{margin:0 10px;background:#212121;color:rgb(222,215,215);border-radius:3px;display:flex;align-items:center;gap:10px;padding:0 10px}
-#nav-mobile a.active-sidenav,.sidenav li>a.active-sidenav{background:rgba(60,128,85,.2);color:#20bf6b}
-#nav-mobile a{font-weight:600}
-.buscador{float:right;margin:0 18px;z-index:1}
-@media screen and (min-width:991px){nav .brand-logo{margin:0 10px}}
-@media only screen and (max-width:992px){nav .brand-logo{left:110px}}
-.tab a,.sidenav li a{font-weight:600}
-img.circle{border-radius:100%;overflow:hidden}
-.sidenav li{line-height:0}
-*{list-style-type:none}
+.tabs .tab a:focus, .tabs .tab a:focus.active { background: none; }
+.col img { aspect-ratio: 2 / 3; width: 100%; border-radius: 5px; margin-bottom: 5px; }
+.padDrew { padding: 10px 0; margin: 50px 0; }
+.sidenav li { transition: background ease .2s; }
+.row .col { padding: 0 5px; }
+.sidenav li > a { margin: 0 10px; background: #212121; color: rgb(222, 215, 215); border-radius: 3px; display: flex; align-items: center; gap: 10px; padding: 0 10px; }
+#nav-mobile a.active-sidenav, .sidenav li > a.active-sidenav { background: rgba(60,128,85,.2); color: #20bf6b; }
+.buscador { float: right; margin: 0 18px; z-index: 1; }
+img.circle { border-radius: 100%; overflow: hidden; }
+.sidenav li { line-height: 0; }
+* { list-style-type: none; }
 </style>
 <title>FlixStream</title>
 </head>
 <body class="grey darken-4">
+
+<!-- Menú de navegación solo para móviles -->
 <div class="navbar-fixed">
 <nav class="nav-extended black">
 <div class="nav-wrapper">
-<a href="#" class="brand-logo">Películas</a>
+<a href="#" class="brand-logo">FlixStream</a>
 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-<ul id="nav-mobile" class="right hide-on-med-and-down">
-<li><a href="#!" class="active-sidenav">Películas</a></li>
-<li><a href="http://action_notifications">Notificaciones</a></li>
-<li><a href="go:configuracion">Configuración</a></li>
-</ul>
-<a href="busqueda" class="left-align buscador"><i class="material-icons">search</i></a>
 </div>
 </nav>
 </div>
 
+<!-- Menú lateral (sidenav) -->
 <ul class="sidenav grey darken-4" id="mobile-demo">
+<li><a href="busqueda.html"><span class="material-icons">search</span> Buscar Películas</a></li>
 <li><a class="active-sidenav" href="#!"><span class="material-icons">movie</span> Películas</a></li>
-<li><a class="" href="http://action_notifications"><span class="material-icons">notifications</span> Notificaciones</a></li>
-<li><a class="" href="go:configuracion"><span class="material-icons">settings</span> Configuración</a></li>
+<li><a href="http://action_notifications"><span class="material-icons">notifications</span> Notificaciones</a></li>
+<li><a href="https://www.e-droid.net/privacy.php?ida=3470798&idl=es"><span class="material-icons">policy</span> Políticas de Privacidad</a></li>
 </ul>
 
-<!-- INICIO SECCIÓN DE PELÍCULAS -->
+<!-- Sección de películas -->
 <div class="row padDrew">
-<a href="p/1184918" class="col s4 m3 l2">
+<a href="p/1184918.html" class="col s4 m3 l2">
 <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/a0a7RC01aTa7pOnskgJb3mCD2Ba.jpg" alt="poster">
 </a>
-<a href="p/1241982" class="col s4 m3 l2">
+<a href="p/1241982.html" class="col s4 m3 l2">
 <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/1b2sEjyhc6kqZD4SazdVlVLuIyh.jpg" alt="poster">
 </a>
-<a href="p/277834" class="col s4 m3 l2">
+<a href="p/277834.html" class="col s4 m3 l2">
 <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/y6wkgEH1gTWAafH9Bc7cNNut0Kf.jpg" alt="poster">
 </a>
-<a href="p/14836" class="col s4 m3 l2">
+<a href="p/14836.html" class="col s4 m3 l2">
 <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/xz1HjxeqpIACyPtJMqv33Z2RjRP.jpg" alt="poster">
 </a>
 </div>
-<!-- FIN SECCIÓN DE PELÍCULAS -->
 
-<!-- Compiled and minified JavaScript -->
+<!-- JavaScript de Materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
 M.AutoInit();
